@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="EVAL2_1_SOBRECARGA_METODOS">
+  <ClassDiagramComponents>
+    <Class name="EVAL2_1_SOBRECARGA_METODOS" package="com.mycompany.eval2_1_sobrecarga_metodos" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="sumar" returnType="int" visibility="public" isStatic="true">
+          <Argument type="int" name="num1"/>
+          <Argument type="int" name="num2"/>
+        </Method>
+        <Method name="sumar" returnType="double" visibility="public" isStatic="true">
+          <Argument type="double" name="num1"/>
+          <Argument type="double" name="num2"/>
+        </Method>
+        <Method name="sumar" returnType="String" visibility="public" isStatic="true">
+          <Argument type="String" name="num1"/>
+          <Argument type="String" name="num2"/>
+        </Method>
+        <Method name="sumar" returnType="void" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
