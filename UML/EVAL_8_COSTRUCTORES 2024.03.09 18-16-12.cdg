@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="EVAL_8_COSTRUCTORES">
+  <ClassDiagramComponents>
+    <Class name="CuentaBancaria" package="com.mycompany.eval_8_costructores" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="saldo" type="double" visibility="private"/>
+        <Field name="noCuenta" type="int" visibility="private"/>
+        <Field name="nomCliente" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="retirar" returnType="void" visibility="public">
+          <Argument type="double" name="monto"/>
+        </Method>
+        <Method name="Depositar" returnType="void" visibility="public">
+          <Argument type="double" name="monto"/>
+        </Method>
+        <Method name="setnomCliente" returnType="void" visibility="public">
+          <Argument type="String" name="Cliente"/>
+        </Method>
+        <Method name="getnomCliente" returnType="String" visibility="public"/>
+        <Method name="setnoCuenta" returnType="void" visibility="public">
+          <Argument type="int" name="Cuenta"/>
+        </Method>
+        <Method name="getnoCuenta" returnType="int" visibility="public"/>
+        <Method name="imprimirDatosCuenta" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EVAL_8_COSTRUCTORES" package="com.mycompany.eval_8_costructores" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

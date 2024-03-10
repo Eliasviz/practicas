@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="EVAL_9_TRIANGULO">
+  <ClassDiagramComponents>
+    <Class name="EVAL_9_TRIANGULO" package="com.mycompany.eval_8_triangulo" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Triangulo" package="com.mycompany.eval_8_triangulo" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="Base" type="double" visibility="private"/>
+        <Field name="Altura" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setBase" returnType="void" visibility="public">
+          <Argument type="double" name="base"/>
+        </Method>
+        <Method name="getBase" returnType="double" visibility="public"/>
+        <Method name="getAltura" returnType="double" visibility="public"/>
+        <Method name="setAltura" returnType="void" visibility="public">
+          <Argument type="double" name="altura"/>
+        </Method>
+        <Method name="calculararea" returnType="double" visibility="private"/>
+        <Method name="calcularHip" returnType="double" visibility="private"/>
+        <Method name="calcularper" returnType="double" visibility="private"/>
+        <Method name="imprimirdatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
