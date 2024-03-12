@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="EVAL2_6_CLASES_ABSTRACTAS">
+  <ClassDiagramComponents>
+    <Class name="Circulo" package="eval2_6_clases_abstractas" visibility="public" xPosition="94.0" yPosition="401.0">
+      <Fields>
+        <Field name="Radio" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="Radio"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getRadio" returnType="double" visibility="public"/>
+        <Method name="setRadio" returnType="void" visibility="public">
+          <Argument type="double" name="Radio"/>
+        </Method>
+        <Method name="CalcularArea" returnType="double" visibility="public"/>
+        <Method name="CalcularPeri" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EVAL2_6_CLASES_ABSTRACTAS" package="eval2_6_clases_abstractas" visibility="public" xPosition="94.0" yPosition="15.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Figuras" package="eval2_6_clases_abstractas" visibility="public" isAbstract="true" xPosition="203.0" yPosition="145.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="CalcularArea" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="CalcularPeri" returnType="double" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Rectangulo" package="eval2_6_clases_abstractas" visibility="public" xPosition="694.0" yPosition="89.0">
+      <Fields>
+        <Field name="Altura" type="double" visibility="private"/>
+        <Field name="Base" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="Altura"/>
+          <Argument type="int" name="Base"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getAltura" returnType="double" visibility="public"/>
+        <Method name="getBase" returnType="double" visibility="public"/>
+        <Method name="setAltura" returnType="void" visibility="public">
+          <Argument type="int" name="Altura"/>
+        </Method>
+        <Method name="setBase" returnType="void" visibility="public">
+          <Argument type="int" name="Base"/>
+        </Method>
+        <Method name="CalcularArea" returnType="double" visibility="public"/>
+        <Method name="CalcularPeri" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Triangulo" package="eval2_6_clases_abstractas" visibility="public" xPosition="384.0" yPosition="344.0">
+      <Fields>
+        <Field name="Altura" type="double" visibility="private"/>
+        <Field name="Base" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="Altura"/>
+          <Argument type="int" name="Base"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getAltura" returnType="double" visibility="public"/>
+        <Method name="getBase" returnType="double" visibility="public"/>
+        <Method name="setAltura" returnType="void" visibility="public">
+          <Argument type="int" name="Altura"/>
+        </Method>
+        <Method name="setBase" returnType="void" visibility="public">
+          <Argument type="int" name="Base"/>
+        </Method>
+        <Method name="CalcularHip" returnType="double" visibility="private"/>
+        <Method name="CalcularArea" returnType="double" visibility="public"/>
+        <Method name="CalcularPeri" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="eval2_6_clases_abstractas.Triangulo" target="eval2_6_clases_abstractas.Figuras"/>
+    <IsRelation name="is" source="eval2_6_clases_abstractas.Rectangulo" target="eval2_6_clases_abstractas.Figuras"/>
+    <IsRelation name="is" source="eval2_6_clases_abstractas.Circulo" target="eval2_6_clases_abstractas.Figuras"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
