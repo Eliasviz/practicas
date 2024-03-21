@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="EVAL2_7_PUBLICACIONES">
+  <ClassDiagramComponents>
+    <Class name="EVAL2_7_PUBLICACIONES" package="eval2_7_publicaciones" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Libros" package="eval2_7_publicaciones" visibility="public" xPosition="88.0" yPosition="224.0">
+      <Fields>
+        <Field name="Autores" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="Titulo"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="int" name="Copias"/>
+          <Argument type="String" name="Autores"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAutores" returnType="String" visibility="public"/>
+        <Method name="setAutores" returnType="void" visibility="public">
+          <Argument type="String" name="Autores"/>
+        </Method>
+        <Method name="OrdenarCopias" returnType="void" visibility="public">
+          <Argument type="int" name="cant"/>
+        </Method>
+        <Method name="ImprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Publicaciones" package="eval2_7_publicaciones" visibility="public" isAbstract="true" xPosition="592.0" yPosition="343.0">
+      <Fields>
+        <Field name="Titulo" type="String" visibility="private"/>
+        <Field name="precio" type="double" visibility="private"/>
+        <Field name="Copias" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Titulo"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="int" name="Copias"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getTitulo" returnType="String" visibility="public"/>
+        <Method name="getPrecio" returnType="double" visibility="public"/>
+        <Method name="getCopias" returnType="int" visibility="public"/>
+        <Method name="setTitulo" returnType="void" visibility="public">
+          <Argument type="String" name="Titulo"/>
+        </Method>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="double" name="precio"/>
+        </Method>
+        <Method name="setCopias" returnType="void" visibility="public">
+          <Argument type="int" name="Copias"/>
+        </Method>
+        <Method name="VederCopias" returnType="void" visibility="public">
+          <Argument type="int" name="cant"/>
+        </Method>
+        <Method name="ImprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Revistas" package="eval2_7_publicaciones" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="eval2_7_publicaciones.Libros" target="eval2_7_publicaciones.Publicaciones"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
