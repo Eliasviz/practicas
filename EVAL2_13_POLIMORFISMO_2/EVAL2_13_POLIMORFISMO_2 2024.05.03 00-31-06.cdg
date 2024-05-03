@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="EVAL2_13_POLIMORFISMO_2">
+  <ClassDiagramComponents>
+    <Class name="Estudiante" package="eval2_13_polimorfismo_2" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="NoControl" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="NoControl"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="NoControl"/>
+          <Argument type="String" name="Nombre"/>
+          <Argument type="String" name="Apellido"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNoControl" returnType="String" visibility="public"/>
+        <Method name="setNoControl" returnType="void" visibility="public">
+          <Argument type="String" name="NoControl"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="ImprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EVAL2_13_POLIMORFISMO_2" package="eval2_13_polimorfismo_2" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="ImprimirDatos" returnType="void" visibility="public" isStatic="true">
+          <Argument type="MostrarDatos" name="datos"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="MostrarDatos" package="eval2_13_polimorfismo_2" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Methods>
+        <Method name="ImprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Class name="Persona" package="eval2_13_polimorfismo_2" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="Nombre" type="String" visibility="private"/>
+        <Field name="Apellido" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="Nombre"/>
+          <Argument type="String" name="Apellido"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="Nombre"/>
+        </Method>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="Apellido"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="ImprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="eval2_13_polimorfismo_2.EVAL2_13_POLIMORFISMO_2" target="eval2_13_polimorfismo_2.MostrarDatos" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="eval2_13_polimorfismo_2.Persona" target="eval2_13_polimorfismo_2.MostrarDatos"/>
+    <IsRelation name="is" source="eval2_13_polimorfismo_2.Estudiante" target="eval2_13_polimorfismo_2.Persona"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
